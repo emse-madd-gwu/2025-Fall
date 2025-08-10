@@ -45,7 +45,7 @@ The files included in the zip file are just example content based on the [blog p
 
 Follow these guidelines in inserting your content:
 
-- You may directly copy and paste any content you wish from your [Survey Plan](https://madd.seas.gwu.edu/2025-Fall/project/2-survey-plan.html) assignment.
+- You may directly copy and paste any content you wish from your [Survey Plan](https://madd.seas.gwu.edu/2024-Fall/project/2-survey-plan.html) assignment.
 - In your `survey.qmd` file, you should have your randomized sets of choice questions working using your `choice_questions.csv` design file.
 - Setup a [database connection](https://surveydown.org/store-data) on Supabase and make sure your survey data is being stored properly in the database.
 

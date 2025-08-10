@@ -1,7 +1,7 @@
 ---
 title: "Intro to surveydown"
 subtitle: "EMSE 6035: Marketing Analytics for Design Decisions"
-date: September 17, 2025
+date: September 18, 2024
 week: 4
 author: "John Paul Helveston"
 institute: "The George Washington University | Dept. of Engineering Management and Systems Engineering"

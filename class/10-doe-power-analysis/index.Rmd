@@ -1,7 +1,7 @@
 ---
 title: "DOE & Power Analysis"
 subtitle: "EMSE 6035: Marketing Analytics for Design Decisions"
-date: October 29, 2025
+date: October 30, 2024
 week: 10
 author: "John Paul Helveston"
 institute: "The George Washington University | Dept. of Engineering Management and Systems Engineering"
@@ -25,32 +25,15 @@ output:
 
 ---
 
-class: inverse
+class: center, middle
 
-# Quiz 4
+# Before we start, re-install {cbcTools}
 
-```{r, echo=FALSE}
-countdown(
-    minutes = 10,
-    warn_when = 30,
-    update_every = 1,
-    bottom = 0,
-    left = 0,
-    font_size = '4em'
-)
+.code100[
+
+```{r, eval=FALSE}
+remotes::install_github("jhelvy/cbcTools")
 ```
-
-.leftcol[
-
-### Link is in the #class channel
-
-]
-
-.rightcol[
-
-<center>
-<img src="https://github.com/emse-p4a-gwu/2022-Spring/raw/main/images/quiz_doge.png" width="400">
-</center>
 
 ]
 
@@ -566,6 +549,37 @@ countdown(
 1. Individually, create a Bayesian D-efficient fractional factorial survey design. Inspect the attribute balance and overlap. 
 
 2. Compare your results with your teammates.
+
+---
+
+class: inverse
+
+# Quiz 4
+
+```{r, echo=FALSE}
+countdown(
+    minutes = 10,
+    warn_when = 30,
+    update_every = 1,
+    bottom = 0,
+    left = 0,
+    font_size = '4em'
+)
+```
+
+.leftcol[
+
+### Link is in the #class channel
+
+]
+
+.rightcol[
+
+<center>
+<img src="https://github.com/emse-p4a-gwu/2022-Spring/raw/main/images/quiz_doge.png" width="400">
+</center>
+
+]
 
 ---
 

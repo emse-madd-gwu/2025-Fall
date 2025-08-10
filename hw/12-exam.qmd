@@ -1,8 +1,0 @@
----
-title: "Exam"
-params:
-  number: 12
----
-
-```{r child = here::here("fragments", "placeholder.qmd")}
-```
