@@ -1,0 +1,84 @@
+---
+title: "Final Presentations"
+subtitle: "EMSE 6035: Marketing Analytics for Design Decisions"
+date: December 11, 2024
+week: 15
+author: "John Paul Helveston"
+institute: "The George Washington University | Dept. of Engineering Management and Systems Engineering"
+output:
+  xaringan::moon_reader:
+    css:
+      - default
+      - css/lexis.css
+      - css/lexis-fonts.css
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+```{r setup, child="../setup.Rmd"}
+```
+
+---
+
+class: center, middle
+
+# OptiSync: AI-Powered Smartphone Optimization
+
+## by Chaitanya Aggarwal, Deepansh Sharma, Chinmay Wayal, and Vishnu Gujula
+
+---
+
+class: center, middle
+
+# Health Tracker Device
+
+## by Abdul Jaleel Marga, Ben Yimaj, Jade Haneef, and Katherine Sequera Dominguez
+
+---
+
+class: center, middle
+
+# Helix analytics
+
+## by Mehul Bhatt, Nisha Chauhan, and Aman Vazirani
+
+---
+
+class: center, middle
+
+# Mobile AI Functionality
+
+## by Taekwon Choi, Stephen Hilton, Bryce Huffman, Vidyullatha KS, and Faizan Mufti
+
+---
+
+class: center, middle
+
+# Scootistic DC
+
+## by Lola Nurullaeva, Sachi Nandurkar, Shubham Patil, Dhanyasri Bolla, and Harshal Dinesh Soni
+
+---
+
+class: center, middle
+
+# Team Water Bottle: A Report on Water Bottle Design Attributes and Their Market Implications
+
+## by Ben Buechner, Max Feng, Daniel Fisher, and Parker Reese
+
+---
+
+class: center, middle, inverse
+
+## Fill out course evals: https://gwu.smartevals.com/
+
+### (please be specific!)
+
+<center>
+<img src="https://media.tenor.com/images/76f5c6f0db05171eef3ee586eba77410/tenor.gif" width=600>
+</center>
