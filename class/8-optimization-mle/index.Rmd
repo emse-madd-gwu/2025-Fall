@@ -1,7 +1,7 @@
 ---
 title: "Optimization & MLE"
 subtitle: "EMSE 6035: Marketing Analytics for Design Decisions"
-date: October 16, 2024
+date: October 15, 2025
 week: 8
 author: "John Paul Helveston"
 institute: "The George Washington University | Dept. of Engineering Management and Systems Engineering"
