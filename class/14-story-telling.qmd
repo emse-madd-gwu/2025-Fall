@@ -9,7 +9,7 @@ params:
   class: "14-story-telling"
   logitrcars: false
   surveydown: false
-  notes: true
+  notes: false
 ---
 
 ```{r child = here::here("fragments", "placeholder.qmd")}

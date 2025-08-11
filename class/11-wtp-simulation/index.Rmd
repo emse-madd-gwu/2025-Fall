@@ -1,7 +1,7 @@
 ---
 title: "WTP & Simulations"
 subtitle: "EMSE 6035: Marketing Analytics for Design Decisions"
-date: November 06, 2024
+date: November 05, 2025
 week: 11
 author: "John Paul Helveston"
 institute: "The George Washington University | Dept. of Engineering Management and Systems Engineering"
@@ -53,7 +53,7 @@ class: center
 
 class: center
 
-# Notational convention
+# Notational convention: hats mean "estimated"
 
 .leftcol[
 
