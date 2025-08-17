@@ -1,14 +1,14 @@
 ---
-title: "Intro to surveydown"
+title: "Project Proposal Workshops"
 toc: false
 execute:
   echo: false
   warning: false
   message: false
 params:
-  class: "4-intro-to-surveydown"
+  class: "4-workshop-proposals"
   logitrcars: false
-  surveydown: true
+  surveydown: false
   notes: true
 ---
 
