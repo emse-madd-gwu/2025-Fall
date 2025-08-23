@@ -601,6 +601,14 @@ countdown(
 
 ---
 
+class: center, middle
+
+# If you're familiar with R and RStudio,
+
+# download and try out [Positron](https://positron.posit.co/download.html)
+
+---
+
 # RStudio Orientation
 
 .leftcol70[
@@ -685,7 +693,7 @@ countdown(
 
 1). Create objects to store the values in this table:
 
-| City              | Area (sq. mi.) | Population (thousands) |
+| City              | Area   (sq. mi.) | Population (thousands) |
 |-------------------|----------------|------------------------|
 | San Francisco, CA | 47             | 884                    |
 | Chicago, IL       | 228            | 2,716                  |
