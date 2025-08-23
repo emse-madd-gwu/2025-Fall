@@ -231,11 +231,17 @@ If you need a special accommodation such as due to an illness, family emergency,
 
 ## Use of chatGPT and other AI tools
 
-Large language models (LLMs) are capable of producing exact solutions to some of the coding problems assigned in this class...sometimes. More often then not though, they produce code that contains errors or poor coding practices, and they often use different approaches then what is taught in class, which can be confusing.
+Use of large language models (LLMs) like chatGPT, Claude, etc. are not only permitted but encouraged. You need to learn how to use AI tools to learn new skills, improve productivity, and find solutions. 
 
-With this in mind, the use of AI tools is in general permitted, but with caveats. If you do AI tools on assignments in this class, you must include the prompt(s) you used as well as changed to made to them to get better results to receive full credit. I want to see how you are using them. **Be transparent** - that is all I ask.
+While LLMs are pretty good, sometimes they suck. **Don't blindly trust them** - they will betray you, especially with code. 
 
-For writing assistance, LLMs are again permitted, but again I want to see how you used them. If you used an LLM to help you with any of the writing portions of your assignments, include a section called "Use of AI on this assignment" and describe which tool(s) we used and how they were used.
+I will grade AI generated work no differently than work you produce without AI. But it's important that you understand **your work should not suck.** Sometimes AI-generated work _really_, _really_ sucks, so if you blindly trust an AI to do your work and submit it and it sucks, you may not like the grade.
+
+Here are some tips on how to work with AI tools but not generate work that sucks:
+
+- Don't submit code that doesn't run (actually run it before submitting it).
+- Actually read what the AI generates.
+- Don't use methods I don't teach. There are dozens of ways to do things - **you should use the approach I teach**. Using some other approach that an AI generates is a _very bad_ idea.
 
 Your goal in using tools like ChatGPT should be to see them as an assistant - a tool to help you accomplish the task - rather than as a solutions manual. Take the time to work through the code / text these tools generate and ensure that what they provide is accurate, and if not make the corrections to fix their mistakes.
 
