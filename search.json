@@ -630,161 +630,6 @@
     "text": "Due: Nov 10 by 11:59pm\nWeight: This assignment is worth 3% of your final grade.\nPurpose: The purpose of this assignment is to introduce the concept of preference heterogeneity - that is, not everyone has the same preferences. We will see two ways to account for this: 1) specify preference parameters as distributions, and 2) estimate fixed parameter models on different sub-groups in your data.\nAssessment: This assignment is graded using a check system:\n\n✔+ (110%): Responses shows phenomenal thought and engagement with the course content. I will not assign these often.\n✔ (100%): Responses are thoughtful, well-written, and show engagement with the course content. This is the expected level of performance.\n✔− (50%): Responses are hastily composed, too short, and/or only cursorily engages with the course content. This grade signals that you need to improve next time. I will hopefully not assign these often.\n\nNotice that this is essentially a pass/fail system. I’m not grading your writing ability and I’m not counting the number of words you write - I’m looking for thoughtful engagement. One or two sentences is not enough. Write at least a paragraph and show me that you did the readings assigned.\n\n\n1. Get Organized\nFollow these instructions:\n\nDownload and edit this template.\nUnzip the template folder. Make sure you actually unzip it! (in Windows, right-click it and use “extract all”)\nOpen the .Rproj file to open RStudio.\nInside RStudio, open the hw10.qmd file, take notes, and write some example code as you go through the readings / exercises below.\n\n\n\n2. Readings\nUp until this point in the class, we have only estimated relatively simple models that assume everyone in our sample has the same preferences. That is, we only estimate a “fixed parameter” model that reflects the average preferences for the whole sample. In reality, preferences are usually heterogeneous (different people have different preferences).\nOne way to account for this is to estimated a “mixed” logit model where we assume the preference parameters in our utility models follow some distribution across the sample (usually a normal distribution). Another way is to estimate a fixed parameter model on different sub-groups in our data. Each of these approaches are discussed in this week’s video on heterogeneity. Take notes as you watch the video and answer the practice questions in the video as part of your reflection. You may submit your answers however you wish, e.g. hand-write them on paper and take a picture and / or type answers in your reflection .Rmd file.\nClick here to download the slides in the video as a PDF.\n\n\n\n\n\n\n3. Reflect\nReflect on what you’ve learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your hw10.qmd file, and include at least one question. The teaching team will review the questions we get and will try to answer them either in Slack or in class.\nIf you’re unsure where to start with a reflection, try filling out this template:\n\n“I used to think ______, now I think ______ 🤔”\n\n\n\n4. Submit\nTo submit your assignment, follow these instructions:\n\nRender your .qmd file by either clicking the “Render” button in RStudio or running the command quarto::quarto_render(\"hw10.qmd\") command.\nOpen the rendered html file and make sure it looks good! Is all the formatting as you expected?\nCreate a zip file of all the files in your R project folder for this assignment and submit it on the corresponding assignment submission on Blackboard."
   },
   {
-    "objectID": "hw/1-data-wrangling-temp.html",
-    "href": "hw/1-data-wrangling-temp.html",
-    "title": "Data Wrangling",
-    "section": "",
-    "text": "Due: Sep 01 by 11:59pm\nWeight: This assignment is worth 3% of your final grade.\nPurpose: The purpose of this assignment is to get more familiar with R and RStudio and to develop some basic strategies for working with data in R.\nAssessment: This assignment is graded using a check system:\n\n✔+ (110%): Responses shows phenomenal thought and engagement with the course content. I will not assign these often.\n✔ (100%): Responses are thoughtful, well-written, and show engagement with the course content. This is the expected level of performance.\n✔− (50%): Responses are hastily composed, too short, and/or only cursorily engages with the course content. This grade signals that you need to improve next time. I will hopefully not assign these often.\n\nNotice that this is essentially a pass/fail system. I’m not grading your writing ability and I’m not counting the number of words you write - I’m looking for thoughtful engagement. One or two sentences is not enough. Write at least a paragraph and show me that you did the readings assigned."
-  },
-  {
-    "objectID": "hw/1-data-wrangling-temp.html#inspect-data-from-other-packages",
-    "href": "hw/1-data-wrangling-temp.html#inspect-data-from-other-packages",
-    "title": "Data Wrangling",
-    "section": "Inspect data from other packages",
-    "text": "Inspect data from other packages\nWrite R code to install the dslabs package from CRAN, then write code to load the library. Write some code to preview and inspect the movielens data frame that gets loaded when you load the library using some of the techniques we saw in class. For each of the following questions, write code to find your answer and leave a detailed response in a comment:\n\nWhat is this dataset about?\nHow many observations are in the data frame?\nWhat is the original source of the data?\nWhat type of data is each variable?\nWhat are the years of the earliest and most recent observations in the data set?"
-  },
-  {
-    "objectID": "hw/1-data-wrangling-temp.html#answer-questions-about-the-data",
-    "href": "hw/1-data-wrangling-temp.html#answer-questions-about-the-data",
-    "title": "Data Wrangling",
-    "section": "Answer questions about the data",
-    "text": "Answer questions about the data\nFor each of the following questions, write code to find your answer and leave a detailed response in a comment:\n\nWhat is the min, mean, and max rating in the data set?\nHow many observations received the maximum rating?\nWhat percentage of total observations received the maximum rating?\nWhat is the title of the observation with the longest title (in terms of numbers of letters in the title)?"
-  },
-  {
-    "objectID": "hw/1-data-wrangling-temp.html#installing-packages-from-github-the-brrr-library",
-    "href": "hw/1-data-wrangling-temp.html#installing-packages-from-github-the-brrr-library",
-    "title": "Data Wrangling",
-    "section": "Installing packages from Github: the BRRR library",
-    "text": "Installing packages from Github: the BRRR library\nThe vast majority of the time, you will install external packages using the install.packages() function. This installs packages from the Comprehensive R Archive Network (CRAN), where most packages are published. But you can also install packages that are under development or haven’t been published to CRAN yet. Most of the time, these packages are hosted on GitHub - an online platform for sharing code (it’s also where all of the files that make up this website are stored).\nTo install a package from GitHub, you first need to install the remotes library. Then you can use the remotes::install_github()` function to install packages directly from GitHub. To try this out, install the remotes library, then trying installing the BRRR package:\n\nremotes::install_github(\"brooke-watson/BRRR\")\n\n\n\n\n\n\n\nNote\n\n\n\nPackages on GitHub are in development and often require other packges to work. So if you get an installation error about some other package dependency, try restarting your R session and try again.\n\n\nNot sure what this package does? Well, one of the other nice things about packages listed on GitHub is the authors tend to write detailed descriptions - check out the GitHub page for the BRRR package. Then try using the BRRR::skrrrahh() function with different number arguments (turn your volume up). In the #welcome channel on slack, post your favorite argument to skrrrahh() (mine is 24)."
-  },
-  {
-    "objectID": "class/9-uncertainty.html",
-    "href": "class/9-uncertainty.html",
-    "title": "Uncertainty",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/7-utility-models.html",
-    "href": "class/7-utility-models.html",
-    "title": "Utility Models",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/5-intro-to-surveydown.html",
-    "href": "class/5-intro-to-surveydown.html",
-    "title": "Intro to surveydown",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/3-quarto-plotting.html",
-    "href": "class/3-quarto-plotting.html",
-    "title": "Quarto & Plotting",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/15-final-presentations.html",
-    "href": "class/15-final-presentations.html",
-    "title": "Final Presentations",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/13-class-review.html",
-    "href": "class/13-class-review.html",
-    "title": "Class Review",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/11-wtp-simulation.html",
-    "href": "class/11-wtp-simulation.html",
-    "title": "WTP & Simulations",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/1-getting-started.html",
-    "href": "class/1-getting-started.html",
-    "title": "Getting Started",
-    "section": "",
-    "text": "KEYBOARD SHORTCUTS FOR SLIDES:\n\nUse ← and → to navigate through the slides.\nUse f to toggle full screen.\nUse o to view an overview of all slides.\nUse h to see a list of other shortcuts.\n\n\n\n\nSLIDES\n View slides\n Download PDF\n\n\n\n\nCLASS PRACTICE\n Notes zip file"
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "Licensing and copyright information",
-    "section": "",
-    "text": "The course material is licensed under the Creative Commons Attribution 4.0 International License and the course code is licensed under a MIT License by John Helveston.",
-    "crumbs": [
-      "Other",
-      "License"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. All analyses will be conducted to support reproducibility from raw data to results using Quarto (which is built on the ideas of RMarkdown). At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions.\nThis course was first created by Dr. John Paul Helveston at the George Washington University for the Spring 2019 semester of EMSE 6035, which was previously called Marketing of Technology. See the LICENSE page for information about reusing and sharing content.",
-    "crumbs": [
-      "Other",
-      "About"
-    ]
-  },
-  {
-    "objectID": "class/10-doe-power-analysis.html",
-    "href": "class/10-doe-power-analysis.html",
-    "title": "DOE & Power Analysis",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/12-heterogeneity.html",
-    "href": "class/12-heterogeneity.html",
-    "title": "Heterogeneity",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/14-story-telling.html",
-    "href": "class/14-story-telling.html",
-    "title": "Story Telling",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/2-data-wrangling.html",
-    "href": "class/2-data-wrangling.html",
-    "title": "Data Wrangling",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/4-workshop-proposals.html",
-    "href": "class/4-workshop-proposals.html",
-    "title": "Project Proposal Workshops",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/6-conjoint-questions.html",
-    "href": "class/6-conjoint-questions.html",
-    "title": "Conjoint Questions",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "class/8-optimization-mle.html",
-    "href": "class/8-optimization-mle.html",
-    "title": "Optimization & MLE",
-    "section": "",
-    "text": "Coming soon!"
-  },
-  {
     "objectID": "faq.html",
     "href": "faq.html",
     "title": "Frequenly Asked Questions",
@@ -915,11 +760,159 @@
     ]
   },
   {
-    "objectID": "hw/1-data-wrangling.html",
-    "href": "hw/1-data-wrangling.html",
+    "objectID": "class/8-optimization-mle.html",
+    "href": "class/8-optimization-mle.html",
+    "title": "Optimization & MLE",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/6-conjoint-questions.html",
+    "href": "class/6-conjoint-questions.html",
+    "title": "Conjoint Questions",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/4-workshop-proposals.html",
+    "href": "class/4-workshop-proposals.html",
+    "title": "Project Proposal Workshops",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/2-data-wrangling.html",
+    "href": "class/2-data-wrangling.html",
     "title": "Data Wrangling",
     "section": "",
     "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/14-story-telling.html",
+    "href": "class/14-story-telling.html",
+    "title": "Story Telling",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/12-heterogeneity.html",
+    "href": "class/12-heterogeneity.html",
+    "title": "Heterogeneity",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/10-doe-power-analysis.html",
+    "href": "class/10-doe-power-analysis.html",
+    "title": "DOE & Power Analysis",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. All analyses will be conducted to support reproducibility from raw data to results using Quarto (which is built on the ideas of RMarkdown). At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions.\nThis course was first created by Dr. John Paul Helveston at the George Washington University for the Spring 2019 semester of EMSE 6035, which was previously called Marketing of Technology. See the LICENSE page for information about reusing and sharing content.",
+    "crumbs": [
+      "Other",
+      "About"
+    ]
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "Licensing and copyright information",
+    "section": "",
+    "text": "The course material is licensed under the Creative Commons Attribution 4.0 International License and the course code is licensed under a MIT License by John Helveston.",
+    "crumbs": [
+      "Other",
+      "License"
+    ]
+  },
+  {
+    "objectID": "class/1-getting-started.html",
+    "href": "class/1-getting-started.html",
+    "title": "Getting Started",
+    "section": "",
+    "text": "KEYBOARD SHORTCUTS FOR SLIDES:\n\nUse ← and → to navigate through the slides.\nUse f to toggle full screen.\nUse o to view an overview of all slides.\nUse h to see a list of other shortcuts.\n\n\n\n\nSLIDES\n View slides\n Download PDF\n\n\n\n\nCLASS PRACTICE\n Notes zip file"
+  },
+  {
+    "objectID": "class/11-wtp-simulation.html",
+    "href": "class/11-wtp-simulation.html",
+    "title": "WTP & Simulations",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/13-class-review.html",
+    "href": "class/13-class-review.html",
+    "title": "Class Review",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/15-final-presentations.html",
+    "href": "class/15-final-presentations.html",
+    "title": "Final Presentations",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/3-quarto-plotting.html",
+    "href": "class/3-quarto-plotting.html",
+    "title": "Quarto & Plotting",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/5-intro-to-surveydown.html",
+    "href": "class/5-intro-to-surveydown.html",
+    "title": "Intro to surveydown",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/7-utility-models.html",
+    "href": "class/7-utility-models.html",
+    "title": "Utility Models",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/9-uncertainty.html",
+    "href": "class/9-uncertainty.html",
+    "title": "Uncertainty",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/1-data-wrangling-temp.html",
+    "href": "hw/1-data-wrangling-temp.html",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Due: Sep 01 by 11:59pm\nWeight: This assignment is worth 3% of your final grade.\nPurpose: The purpose of this assignment is to get more familiar with R and RStudio and to develop some basic strategies for working with data in R.\nAssessment: This assignment is graded using a check system:\n\n✔+ (110%): Responses shows phenomenal thought and engagement with the course content. I will not assign these often.\n✔ (100%): Responses are thoughtful, well-written, and show engagement with the course content. This is the expected level of performance.\n✔− (50%): Responses are hastily composed, too short, and/or only cursorily engages with the course content. This grade signals that you need to improve next time. I will hopefully not assign these often.\n\nNotice that this is essentially a pass/fail system. I’m not grading your writing ability and I’m not counting the number of words you write - I’m looking for thoughtful engagement. One or two sentences is not enough. Write at least a paragraph and show me that you did the readings assigned."
+  },
+  {
+    "objectID": "hw/1-data-wrangling-temp.html#inspect-data-from-other-packages",
+    "href": "hw/1-data-wrangling-temp.html#inspect-data-from-other-packages",
+    "title": "Data Wrangling",
+    "section": "Inspect data from other packages",
+    "text": "Inspect data from other packages\nWrite R code to install the dslabs package from CRAN, then write code to load the library. Write some code to preview and inspect the movielens data frame that gets loaded when you load the library using some of the techniques we saw in class. For each of the following questions, write code to find your answer and leave a detailed response in a comment:\n\nWhat is this dataset about?\nHow many observations are in the data frame?\nWhat is the original source of the data?\nWhat type of data is each variable?\nWhat are the years of the earliest and most recent observations in the data set?"
+  },
+  {
+    "objectID": "hw/1-data-wrangling-temp.html#answer-questions-about-the-data",
+    "href": "hw/1-data-wrangling-temp.html#answer-questions-about-the-data",
+    "title": "Data Wrangling",
+    "section": "Answer questions about the data",
+    "text": "Answer questions about the data\nFor each of the following questions, write code to find your answer and leave a detailed response in a comment:\n\nWhat is the min, mean, and max rating in the data set?\nHow many observations received the maximum rating?\nWhat percentage of total observations received the maximum rating?\nWhat is the title of the observation with the longest title (in terms of numbers of letters in the title)?"
+  },
+  {
+    "objectID": "hw/1-data-wrangling-temp.html#installing-packages-from-github-the-brrr-library",
+    "href": "hw/1-data-wrangling-temp.html#installing-packages-from-github-the-brrr-library",
+    "title": "Data Wrangling",
+    "section": "Installing packages from Github: the BRRR library",
+    "text": "Installing packages from Github: the BRRR library\nThe vast majority of the time, you will install external packages using the install.packages() function. This installs packages from the Comprehensive R Archive Network (CRAN), where most packages are published. But you can also install packages that are under development or haven’t been published to CRAN yet. Most of the time, these packages are hosted on GitHub - an online platform for sharing code (it’s also where all of the files that make up this website are stored).\nTo install a package from GitHub, you first need to install the remotes library. Then you can use the remotes::install_github()` function to install packages directly from GitHub. To try this out, install the remotes library, then trying installing the BRRR package:\n\nremotes::install_github(\"brooke-watson/BRRR\")\n\n\n\n\n\n\n\nNote\n\n\n\nPackages on GitHub are in development and often require other packges to work. So if you get an installation error about some other package dependency, try restarting your R session and try again.\n\n\nNot sure what this package does? Well, one of the other nice things about packages listed on GitHub is the authors tend to write detailed descriptions - check out the GitHub page for the BRRR package. Then try using the BRRR::skrrrahh() function with different number arguments (turn your volume up). In the #welcome channel on slack, post your favorite argument to skrrrahh() (mine is 24)."
   },
   {
     "objectID": "hw/10-heterogeneity.html",
