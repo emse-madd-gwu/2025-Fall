@@ -49,11 +49,12 @@ output:
 
 .font80[
 
-- 2018 - Present Assistant Professor, Engineering Management & Systems Engineering
-- 2016-2018 Postdoc at [Institute for Sustainable Energy](https://www.bu.edu/ise/), Boston University
-- 2016 PhD in Engineering & Public Policy at Carnegie Mellon University
-- 2015 MS in Engineering & Public Policy at Carnegie Mellon University
-- 2010 BS in Engineering Science & Mechanics at Virginia Tech
+- 2025 - Present: Associate Professor, EMSE
+- 2018 - 2025: Assistant Professor, EMSE
+- 2016-2018: Postdoc at [Institute for Sustainable Energy](https://www.bu.edu/ise/), Boston University
+- 2016: PhD in Engineering & Public Policy at Carnegie Mellon University
+- 2015: MS in Engineering & Public Policy at Carnegie Mellon University
+- 2010: BS in Engineering Science & Mechanics at Virginia Tech
 - Website: [www.jhelvy.com](http://www.jhelvy.com/)
 
 ]]
@@ -66,15 +67,15 @@ output:
 
 --
 
-## `r fa('globe')` Course website: https://madd.seas.gwu.edu/2024-Fall/
+## `r fa('globe')` Course website: https://madd.seas.gwu.edu/2025-Fall/
 
 --
 
-## `r fa('slack')` Course slack: https://emse-madd-f24.slack.com
+## `r fa('slack')` Course slack: https://emse-madd-f25.slack.com
 
 --
 
-## `r fa('r-project')` & RStudio: [Course Software Page](https://madd.seas.gwu.edu/2024-Fall/software.html)
+## `r fa('r-project')` & RStudio: [Course Software Page](https://madd.seas.gwu.edu/2025-Fall/software.html)
 
 ---
 
@@ -88,6 +89,28 @@ class: center
 
 ---
 
+# Wait, why aren't we using Python?
+
+.leftcol[
+
+### The field of choice modeling grew out of Statistics, not Machine Learning
+
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language) is a general purpose language developed by [**Guido van Rossum**](https://en.wikipedia.org/wiki/Guido_van_Rossum), a computer scientist.
+- Unlike R, Python was not originally developed for data analysis.
+- Both languages are extremely useful, and **you should probably learn python too**.
+
+]
+
+.rightcol[
+
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Guido-portrait-2014-drc.jpg/1280px-Guido-portrait-2014-drc.jpg" width=100%>
+</center>
+
+]
+
+---
+
 # Learning Objectives
 
 ### After this class, you will know how to... 
@@ -95,7 +118,7 @@ class: center
 - ### ...work with data in `r fa('r-project')`
 - ### ...design effective surveys to get rich data
 - ### ...analyze consumer choice data to model consumer preferences
-- ### ...design effective charts to communicate insights
+- ### ...effectively communicate insights
 
 ---
 
@@ -117,7 +140,7 @@ class: center
 
 ### **Not sure?** 
 
-### Take [this self assessment](https://madd.seas.gwu.edu/2024-Fall/self-assessment.html)
+### Take [this self assessment](https://madd.seas.gwu.edu/2025-Fall/self-assessment.html)
 
 ]
 
@@ -131,11 +154,11 @@ class: center
 
 --
 
-## `r fa('calendar')` ~Every week (10 total)
+## `r fa('calendar')` ~Every week (12 total)
 
 --
 
-## `r fa('clock')` Due 11:59pm Tues. before class
+## `r fa('clock')` Due 11:59pm Monday before class
 
 --
 
@@ -147,7 +170,7 @@ class: center
 
 --
 
-## `r fa('calendar')` At the start of class every other week-is. Make ups only for excused absences (i.e. don't be late).
+## `r fa('calendar')` At the start of class every other week-ish. Make ups only for excused absences (i.e. don't be late).
 
 --
 
@@ -155,7 +178,7 @@ class: center
 
 --
 
-## `r fa('clock')` ~5 - 10 minutes
+## `r fa('clock')` 10 minutes
 
 --
 
@@ -171,7 +194,7 @@ class: center
 
 ---
 
-# [Semester Project](https://madd.seas.gwu.edu/2024-Fall/project/0-overview.html) (45% of grade)
+# [Semester Project](https://madd.seas.gwu.edu/2025-Fall/project/0-overview.html) (45% of grade)
 
 .leftcol[
 
@@ -191,13 +214,13 @@ class: center
 
 Item            | Weight | Due
 ----------------|----------------------------|--------------------
-Project Proposal      | 5 %    | Sep. 24
-Survey Plan           | 5 %    | Oct. 03
-Pilot Survey          | 5 %    | Oct. 17
-Pilot Analysis        | 5 %    | Nov. 05
-Final Survey          | 5 %    | Nov. 19
-Final Analysis Report | 15 %   | Dec. 10
-Final Presentation    | 5 %    | Dec. 12
+Project Proposal      | 5 %    | Sep. 21
+Survey Plan           | 5 %    | Sep. 30
+Pilot Survey          | 5 %    | Oct. 14
+Pilot Analysis        | 5 %    | Nov. 02
+Final Survey          | 5 %    | Nov. 16
+Final Analysis Report | 15 %   | Dec. 07
+Final Presentation    | 5 %    | Dec. 09
 
 ]
 
@@ -208,7 +231,7 @@ background-color: #FFF
 # .center[Grades]
 
 <center>
-<img src="https://madd.seas.gwu.edu/2024-Fall/figs/grade-breakdown-1.png" width=90%>
+<img src="https://madd.seas.gwu.edu/2025-Fall/figs/grade-breakdown-1.png" width=90%>
 </center>
 
 ---
@@ -259,20 +282,33 @@ Final Presentation    | 5 %    |
 
 ## Use of chatGPT and other AI tools
 
-- Large language models (LLMs) are pretty good...but sometimes suck.
+- Large language models (LLMs) are pretty good
+
+--
+
+- Sometimes they suck.
+
+--
+
+- I will grade your work. **Your work should not suck**
+
+---
+
+## Ways to not have your work suck:
+
+- Don't submit code that doesn't run (actually run it before submitting it).
+
+--
+
+- Actually read what the AI generates.
 
 --
  
-- Use of AI tools is generally permitted, but **be transparent**.
+- There are dozens of ways to do things - **you should use the approach I teach**.
 
-- All assignments must include a **Use of AI on this assignment** section where you:
+--
 
-    - Describe any AI tool and how it was used along with prompt(s) used.
-    - Include a link to the chat transcript.
-
-## **Use AI as an assistant, not a solutions manual**
-
-> Curious how LLMs actually work? Check out [this article](https://www.understandingai.org/p/large-language-models-explained-with), which provides a simplified description of how they work (which itself is still quite complicated).
+### **Use AI as an assistant, not a solutions manual**
 
 ---
 
@@ -308,7 +344,7 @@ Final Presentation    | 5 %    |
 
 --
 
-## `r fa('slack')` Use [Slack](https://emse-madd-f24.slack.com/) to ask questions.
+## `r fa('slack')` Use [Slack](https://emse-madd-f25.slack.com/) to ask questions.
 
 --
 
@@ -518,7 +554,7 @@ class: center, inverse, middle
 
 # Your project starts now!
 
-# [View project Ideas](https://docs.google.com/presentation/d/1MQe3Q_f8uWRF5PUtNRnNEQHqWapjS8YM/edit?usp=sharing&ouid=108448693507188860264&rtpof=true&sd=true)
+# [View projects](https://docs.google.com/presentation/d/1R7GZ4_O6q7xINIlcjiO5CcKSh4V2ZWX3/edit?usp=sharing&ouid=108448693507188860264&rtpof=true&sd=true)
 
 ---
 
@@ -543,9 +579,9 @@ class: inverse
 
 # .center[.fancy[Break]]
 
-1. If you haven't already, install everything on the [software page](https://madd.seas.gwu.edu/2024-Fall/software.html)
+1. If you haven't already, install everything on the [software page](https://madd.seas.gwu.edu/2025-Fall/software.html)
 
-2. Stand up, meet each other, (maybe form teams?...use [this sheet](https://docs.google.com/spreadsheets/d/1Y-ApfpujwbywjL05KCmUo-AzZqRheqq7_M_vLuEnjt0/edit?usp=sharing)) 
+2. Stand up, meet each other, (maybe form teams?...use [this sheet](https://docs.google.com/spreadsheets/d/1bWkSJ7iinHWt4NOPdGYBk2ZxhmhblM1KsDN7Dd1Cwmg/edit?usp=sharing)) 
 
 ```{r, echo=FALSE}
 countdown(
@@ -786,7 +822,7 @@ wikifacts::wiki_randomfact()
 
 class: inverse, center, middle
 
-## If you haven't yet, install [these packages](https://raw.githubusercontent.com/emse-madd-gwu/2024-Fall/main/content/packages.R)
+## If you haven't yet, install [these packages](https://raw.githubusercontent.com/emse-madd-gwu/2025-Fall/main/content/packages.R)
 
 ---
 

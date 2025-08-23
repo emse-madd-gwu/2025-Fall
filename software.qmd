@@ -11,6 +11,8 @@
 - [Download and install R](https://cloud.r-project.org) (version 4.0.2 or higher)
 - [Download and install RStudio](https://rstudio.com/products/rstudio/download/) (Desktop version)
 
+> **Optional:** Posit has a new IDE called Positron, which is similar to RStudio but has some new features. I encourage you to try it out if you want, but it's not required for this course. You can download it [here](https://positron.posit.co/download.html).
+
 4. If you have a Mac, install [XQuartz](https://www.xquartz.org/). This is needed for making some figures and is only for Mac (if you're on Windows or Linux, skip this step).
 
 5. [Download and install Quarto](https://quarto.org/docs/get-started/)
