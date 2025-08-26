@@ -282,6 +282,8 @@ Final Presentation    | 5 %    |
 
 ## Use of chatGPT and other AI tools
 
+<br>
+
 - Large language models (LLMs) are pretty good
 
 --
@@ -290,7 +292,7 @@ Final Presentation    | 5 %    |
 
 --
 
-- I will grade your work. **Your work should not suck**
+- I will grade whatever you submit. **It should not suck.**
 
 ---
 
@@ -300,15 +302,62 @@ Final Presentation    | 5 %    |
 
 --
 
-- Actually read what the AI generates.
+- Actually read what the AI generates, and **don't submit something you don't understand**. (Ask the LLM how it works)
 
 --
- 
+
 - There are dozens of ways to do things - **you should use the approach I teach**.
 
 --
 
+- Ask yourself **"what would I ask Prof. Helveston?"**
+
+--
+
+<br>
+
 ### **Use AI as an assistant, not a solutions manual**
+
+---
+
+class: middle
+
+.leftcol75[
+
+<center>
+<img src="images/llm-bad.png" width=100%>
+</center>
+
+]
+
+.rightcol25[
+
+## .center[The **wrong** ways to use LLMs]
+
+Don't copy-paste past the basics - it'll rob you of mastery
+
+]
+
+---
+
+class: middle
+
+.leftcol75[
+
+<center>
+<img src="images/llm-good.png" width=100%>
+</center>
+
+]
+
+.rightcol25[
+
+## .center[The **right** way to use LLMs]
+
+- Asking to explain error messages
+- Asking to explain _why_ something works or doesn't work
+
+]
 
 ---
 
