@@ -725,7 +725,7 @@ countdown(
 
 class: center, middle
 
-# [Project Proposal Guidelines](https://madd.seas.gwu.edu/2024-Fall/project/1-proposal.html)
+# [Project Proposal Guidelines](https://madd.seas.gwu.edu/2025-Fall/project/1-proposal.html)
 
 ---
 
@@ -861,7 +861,7 @@ background-size: contain
 
 class: center 
 
-# Product Attributes Table ([example](https://docs.google.com/spreadsheets/d/1Hmxfav_l1bubnaPkIiiMW0tZrFA-xblP9_ndN_6TB1I/edit?usp=sharing))
+# Product Attributes Table ([example](https://docs.google.com/spreadsheets/d/1ewHLXWS0mnHOALPwat_DH-EC3yttoBTL3nPZzRbb9YA/edit?usp=sharing))
 
 <center>
 <img src="images/solar2.png" width=1000>
@@ -887,7 +887,7 @@ countdown(
 1. Sit with your team
 2. Discuss & identify your customer & potential competitors 
 3. Discuss & identify key _Product Attributes_ & _Research Questions_
-4. Start building out your model relationships table (copy from [this example](https://docs.google.com/spreadsheets/d/1Hmxfav_l1bubnaPkIiiMW0tZrFA-xblP9_ndN_6TB1I/edit?usp=sharing))
+4. Start building out your model relationships table (copy from [this example](https://docs.google.com/spreadsheets/d/1ewHLXWS0mnHOALPwat_DH-EC3yttoBTL3nPZzRbb9YA/edit?usp=sharing))
 
 ### Suggestions
 

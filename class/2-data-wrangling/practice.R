@@ -1,4 +1,4 @@
- # install.packages(c("tidyverse", "here"))
+# install.packages(c("tidyverse", "here"))
 library(tidyverse)
 library(here)
 
@@ -6,38 +6,36 @@ library(here)
 options(dplyr.width = Inf)
 
 
-
 # DATA FRAMES --------------------------------------------------------------
 
 beatles <- tibble(
-    firstName   = c("John", "Paul", "Ringo", "George"),
-    lastName    = c("Lennon", "McCartney", "Starr", "Harrison"),
-    instrument  = c("guitar", "bass", "drums", "guitar"),
-    yearOfBirth = c(1940, 1942, 1940, 1943),
-    deceased    = c(TRUE, FALSE, FALSE, TRUE)
+  firstName = c("John", "Paul", "Ringo", "George"),
+  lastName = c("Lennon", "McCartney", "Starr", "Harrison"),
+  instrument = c("guitar", "bass", "drums", "guitar"),
+  yearOfBirth = c(1940, 1942, 1940, 1943),
+  deceased = c(TRUE, FALSE, FALSE, TRUE)
 )
 
 beatles
 
 # Extract rows and columns using df[row, col]
-beatles[1,] # First row
-beatles[,1] # First column
+beatles[1, ] # First row
+beatles[, 1] # First column
 
 # Extract whole columns using df$name
 beatles$firstName
 beatles$lastName
 
 # Get the dimensions
-nrow(beatles)  # number of rows
-ncol(beatles)  # number of columns
-dim(beatles)   # numbers of rows, columns 
+nrow(beatles) # number of rows
+ncol(beatles) # number of columns
+dim(beatles) # numbers of rows, columns
 
 # View dataset in new tab
-view(beatles) # This is "read-only" so you can't corrupt the data :)
+View(beatles) # This is "read-only" so you can't corrupt the data :)
 
 # View data types of each column
 glimpse(beatles)
-
 
 
 # DATA FROM PACKAGES ----------------------------------------------------------
@@ -65,8 +63,6 @@ view(msleep)
 names(msleep)
 colnames(msleep)
 
-
-
 # DATA FROM CSV FILE ----------------------------------------------------------
 
 # Build path to data using here()
@@ -75,10 +71,10 @@ colnames(msleep)
 
 # How many rows and columns are in the data frame?
 
-# What type of data is each column? 
+# What type of data is each column?
 # (Just look, don't need to type out the answer)
 
-# Preview the different columns - what do you think this data is about? 
+# Preview the different columns - what do you think this data is about?
 # What might one row represent?
 
 # How many unique airports are in the data frame?
@@ -89,8 +85,6 @@ colnames(msleep)
 
 # What is the lowest and highest cost of any one repair in the data frame?
 # HINT: Use min() and max() with na.rm = TRUE
-
-
 
 # filter() & select() ---------------------------------------------------------
 
@@ -107,8 +101,6 @@ colnames(msleep)
 
 # How many unique species of birds have been involved in accidents at DC
 # airports?
-
-
 
 # mutate() & arrange() --------------------------------------------------------
 
