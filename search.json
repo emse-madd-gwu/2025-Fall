@@ -676,7 +676,7 @@
     "href": "class/3-quarto-plotting.html",
     "title": "Quarto & Plotting",
     "section": "",
-    "text": "Coming soon!"
+    "text": "KEYBOARD SHORTCUTS FOR SLIDES:\n\nUse ← and → to navigate through the slides.\nUse f to toggle full screen.\nUse o to view an overview of all slides.\nUse h to see a list of other shortcuts.\n\n\n\n\nSLIDES\n View slides\n Download PDF\n\n\n\n\nCLASS PRACTICE\n Notes zip file"
   },
   {
     "objectID": "class/15-final-presentations.html",
@@ -761,7 +761,7 @@
     "href": "class/4-workshop-proposals.html",
     "title": "Project Proposal Workshops",
     "section": "",
-    "text": "Coming soon!"
+    "text": "No class this week - sign up HERE for your team proposal meeting with Professor Helveston"
   },
   {
     "objectID": "class/6-conjoint-questions.html",
@@ -1044,7 +1044,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "All assignments are due by 11:59pm on the due date.\n\n\n\n\n\nWeek\nDate\nQuiz\nClass\nWeekly HW\nFinal Projects\n\n\n\n\n1\nAug 27\n\nGetting Started\nClass orientation, intro to R, workflow, packages\nHW 1\nDue: Sep 01\n\n\n\n2\nSep 03\n\nData Wrangling\nImporting, wrangling, and summarizing data in R\nHW 2\nDue: Sep 08\n\n\n\n3\nSep 10\nQuiz 1:\nWeek 2\nQuarto & Plotting\nIntro to \"literate programming\" with Quarto and plotting with {ggplot2}\nFinish Proposals!\nProposal\nDue: Sep 21\n\n\n4\nSep 17\n\nProject Workshop\nTeam meetings to discuss project proposals\nHW 3\nDue: Sep 22\nSurvey Plan\nDue: Sep 30\n\n\n5\nSep 24\n\nIntro to surveydown\n\nHW 4\nDue: Sep 29\n\n\n\n6\nOct 01\nQuiz 2:\nWeek 4\nConjoint Questions\nGenerating conjoint questions in R, implementing in surveydown\nHW 5\nDue: Oct 06\nPilot Survey\nDue: Oct 14\n\n\n7\nOct 08\n\nUtility Models\nIntro to utility models, discrete vs. continuous parameters, parameter coding\nHW 6\nDue: Oct 13\n\n\n\n8\nOct 15\nQuiz 3:\nWeek 7\nOptimization & MLE\nOptimization, maximum likelihood estimation\nHW 7\nDue: Oct 20\n\n\n\n9\nOct 22\n\nUncertainty\nComputing uncertainty in coefficient estimates\nHW 8\nDue: Oct 27\nPilot Analysis\nDue: Nov 02\n\n\n10\nOct 29\nQuiz 4:\nWeek 8\nDOE & Power Analysis\nDesigning your survey to reduce error\nHW 9\nDue: Nov 03\n\n\n\n11\nNov 05\n\nWTP & Simulation\nComputing WTP, WTP space models, market simulations\nHW 10\nDue: Nov 10\nFinal Survey\nDue: Nov 16\n\n\n12\nNov 12\nQuiz 5:\nWeek 11\nHeterogeneity\nModeling differences in preferences across sample population\nHW 11\nDue: Nov 17\n\n\n\n13\nNov 19\n\nClass Review\nOverview of course concepts\nHW 12\nDue: Nov 23\nFinal Analysis\nDue: Dec 07\n\n\n14\nNov 26\n\nThanksgiving - no class\n\n\n\n\n\n15\nDec 03\n\nStory Telling\nGo over exam solutions and also discuss tips for giving a good presentation\n\n\n\n\n16\nDec 10\n\nFinal Presentations\nIn-class presentation showcase w/Q&A\n\nFinal Presentation\nDue: Dec 09",
+    "text": "All assignments are due by 11:59pm on the due date.\n\n\n\n\n\nWeek\nDate\nQuiz\nClass\nWeekly HW\nFinal Projects\n\n\n\n\n1\nAug 27\n\nGetting Started\nClass orientation, intro to R, workflow, packages\nHW 1\nDue: Sep 01\n\n\n\n2\nSep 03\n\nData Wrangling\nImporting, wrangling, and summarizing data in R\nHW 2\nDue: Sep 08\n\n\n\n3\nSep 10\n\nQuarto & Plotting\nIntro to \"literate programming\" with Quarto and plotting with {ggplot2}\nFinish Proposals!\nProposal\nDue: Sep 21\n\n\n4\nSep 17\n\nProject Workshop\nTeam meetings to discuss project proposals\nHW 3\nDue: Sep 22\nSurvey Plan\nDue: Sep 30\n\n\n5\nSep 24\nQuiz 1:\nWeek 2\nIntro to surveydown\n\nHW 4\nDue: Sep 29\n\n\n\n6\nOct 01\nQuiz 2:\nWeek 4\nConjoint Questions\nGenerating conjoint questions in R, implementing in surveydown\nHW 5\nDue: Oct 06\nPilot Survey\nDue: Oct 14\n\n\n7\nOct 08\n\nUtility Models\nIntro to utility models, discrete vs. continuous parameters, parameter coding\nHW 6\nDue: Oct 13\n\n\n\n8\nOct 15\nQuiz 3:\nWeek 7\nOptimization & MLE\nOptimization, maximum likelihood estimation\nHW 7\nDue: Oct 20\n\n\n\n9\nOct 22\n\nUncertainty\nComputing uncertainty in coefficient estimates\nHW 8\nDue: Oct 27\nPilot Analysis\nDue: Nov 02\n\n\n10\nOct 29\nQuiz 4:\nWeek 8\nDOE & Power Analysis\nDesigning your survey to reduce error\nHW 9\nDue: Nov 03\n\n\n\n11\nNov 05\n\nWTP & Simulation\nComputing WTP, WTP space models, market simulations\nHW 10\nDue: Nov 10\nFinal Survey\nDue: Nov 16\n\n\n12\nNov 12\nQuiz 5:\nWeek 11\nHeterogeneity\nModeling differences in preferences across sample population\nHW 11\nDue: Nov 17\n\n\n\n13\nNov 19\n\nClass Review\nOverview of course concepts\nHW 12\nDue: Nov 23\nFinal Analysis\nDue: Dec 07\n\n\n14\nNov 26\n\nThanksgiving - no class\n\n\n\n\n\n15\nDec 03\n\nStory Telling\nGo over exam solutions and also discuss tips for giving a good presentation\n\n\n\n\n16\nDec 10\n\nFinal Presentations\nIn-class presentation showcase w/Q&A\n\nFinal Presentation\nDue: Dec 09",
     "crumbs": [
       "Schedule"
     ]
