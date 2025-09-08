@@ -12,5 +12,4 @@ params:
   notes: true
 ---
 
-```{r child = here::here("fragments", "placeholder.qmd")}
-```
+No class this week - sign up **[HERE](https://calendar.app.google/niXopBudj9t4pmbj7)** for your team proposal meeting with Professor Helveston
