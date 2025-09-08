@@ -325,9 +325,61 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Coming soon!</p>
+<blockquote class="blockquote">
+<p><strong>Due</strong>: Sep 22 by 11:59pm</p>
+<p><strong>Weight</strong>: This assignment is worth 3% of your final grade.</p>
+<p><strong>Purpose</strong>: The purpose of this assignment is to get familiar with the <a href="https://surveydown.org/">surveydown</a> survey platform, which we will be using to implement our surveys.</p>
+<p><strong>Assessment</strong>: This assignment is graded using a check system:</p>
+<ul>
+<li>✔+ (110%): Responses shows phenomenal thought and engagement with the course content. I will not assign these often.</li>
+<li>✔ (100%): Responses are thoughtful, well-written, and show engagement with the course content. This is the expected level of performance.</li>
+<li>✔− (50%): Responses are hastily composed, too short, and/or only cursorily engages with the course content. This grade signals that you need to improve next time. I will <em>hopefully</em> not assign these often.</li>
+</ul>
+<p>Notice that this is essentially a pass/fail system. I’m not grading your writing ability and I’m not counting the number of words you write - I’m looking for thoughtful engagement. One or two sentences is <strong>not enough</strong>. Write at least a paragraph and show me that you did the readings assigned.</p>
+</blockquote>
+<section id="get-organized" class="level1">
+<h1>1. Get Organized</h1>
+<p>Follow these instructions:</p>
+<ol type="1">
+<li>Download and edit <a href="https://madd.seas.gwu.edu/2025-Fall/templates/hw3.zip">this template</a>.</li>
+<li>Unzip the template folder. <strong>Make sure you actually unzip it</strong>! (in Windows, right-click it and use “extract all”)</li>
+<li>Open the .Rproj file to open RStudio.</li>
+<li>Inside RStudio, open the <code>hw3.qmd</code> file, take notes, and write some example code as you go through the readings / exercises below.</li>
+</ol>
+</section>
+<section id="readings" class="level1">
+<h1>2. Readings</h1>
+<p>Next week we will start getting into designing conjoint surveys for our projects. We will implement them using <a href="https://surveydown.org/">surveydown</a>, which is a markdown-based platform for designing surveys. The platform allows you to use R or markdown code (just like you would in a .qmd file) to define everything you see in an online survey. While you will be editing a Quarto document, it renders into a <a href="https://shiny.posit.co/">Shiny</a> app, which you can then use to administer your survey.</p>
+<p>To get familiar with the platform, read the <a href="https://surveydown.org/docs/getting-started">Getting Started</a> and <a href="https://surveydown.org/docs/basic-components">Basic Components</a> documentation pages on the surveydown website. <strong>Take notes</strong> as you read the docs.</p>
+</section>
+<section id="make-a-practice-survey" class="level1">
+<h1>3. Make a practice survey</h1>
+<p>For practice, try replicating one of the <a href="https://surveydown.org/templates">template surveys</a> listed on the surveydown website. The <a href="https://surveydown.org/templates/default">default</a> survey template will be the easiest to use, but try another template if you are interested. Follow these steps:</p>
+<ol type="1">
+<li>Download or clone the <a href="https://github.com/surveydown-dev/templates">templates GitHub repository</a>.</li>
+<li>In the template you chose, open RStudio, then open the app.R file and click “Run”. Then copy-paste the localhost url into your browser to locally preview the survey.</li>
+<li>Make edits to the survey to personalize it. Choose a topic that you find interesting and try modifying at least one question in the survey, then re-render the document to see your changes.</li>
+</ol>
+</section>
+<section id="reflect" class="level1">
+<h1>4. Reflect</h1>
+<p>Reflect on what you’ve learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your <code>hw3.qmd</code> file, and include at least one question. The teaching team will review the questions we get and will try to answer them either in Slack or in class.</p>
+<p>If you’re unsure where to start with a reflection, try filling out this template:</p>
+<blockquote class="blockquote">
+<p>“I used to think ______, now I think ______ 🤔”</p>
+</blockquote>
+</section>
+<section id="submit" class="level1">
+<h1>5. Submit</h1>
+<p>To submit your assignment, follow these instructions:</p>
+<ol type="1">
+<li>Render your .qmd file by either clicking the “Render” button in RStudio or running the command <code>quarto::quarto_render("hw3.qmd")</code> command.</li>
+<li>Open the rendered html file and make sure it looks good! Is all the formatting as you expected?</li>
+<li>Create a zip file of all the files in your R project folder for this assignment (your <code>hw3.qmd</code> and your demo survey files) and submit it on the corresponding assignment submission on Blackboard.</li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
