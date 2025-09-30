@@ -36,7 +36,7 @@ profiles <- cbc_profiles(
     price       = c(15, 20, 25), # Price ($1,000)
     fuelEconomy = c(20, 25, 30), # Fuel economy (mpg)
     accelTime   = c(6, 7, 8),    # 0-60 mph acceleration time (s)
-    powertrain  = c("gas", "electric")
+    powertrain  = c("Gasoline", "Electric")
 )
 # Make a full-factorial design of experiment
 design <- cbc_design(
@@ -101,7 +101,7 @@ design_no_choice_short <- design_no_choice %>%
     price = ifelse(altID == 4, "", price),
     fuelEconomy = ifelse(altID == 4, "", fuelEconomy),
     accelTime = ifelse(altID == 4, "", accelTime),
-    powertrain = ifelse(powertrainelectric == 1, "Electric", "Gasoline"),
+    powertrain = ifelse(powertrainElectric == 1, "Electric", "Gasoline"),
     powertrain = ifelse(altID == 4, "", powertrain),
     altID = ifelse(altID == 4, "None", altID)
   ) %>% 
@@ -290,7 +290,7 @@ You can insert citations with `[@citekey]`, and a "References" table will be aut
 
 ## - [logitr-cars](https://github.com/jhelvy/logitr-cars/archive/refs/heads/main.zip)
 
-## - [today's practice notes](https://madd.seas.gwu.edu/2025-Fall/class/6-conjoint-questions.html)
+## - [today's practice notes (2 survey templates)](https://madd.seas.gwu.edu/2025-Fall/class/6-conjoint-questions.html)
 
 ---
 
@@ -302,6 +302,10 @@ class: middle, inverse, center
 
 ## .center[We'll be using the [{cbcTools} package](https://jhelvy.github.io/cbcTools/) today]
 
+<br>
+
+Install with:
+
 ```{r, eval=FALSE}
 pak::pak("jhelvy/cbcTools")
 ```
@@ -309,6 +313,8 @@ pak::pak("jhelvy/cbcTools")
 ---
 
 # Choice question components
+
+<br>
 
 ### 1. Generate `profiles` for each attribute and level
 
@@ -400,7 +406,7 @@ kable(t(design_no_choice_q2))
 
 ---
 
-# Attribute-specific features
+# .center[Attribute-specific features]
 
 Some attributes may only be valid for certain levels of other attributes
 
@@ -410,23 +416,21 @@ Some attributes may only be valid for certain levels of other attributes
 
 <br>
 
-To implement this, edit `profiles` prior to using `cbc_design()`
+To implement this, you may need to add restrictions to your `profiles` with `cbc_restrict()`
 
 (see `logitr-cars` code 1.2)
 
 ---
 
-# Restricted profiles
-
-Sometimes you may want to not allow a specific combination of features  -  use `cbc_restrict()` to implement this 
-
-(see `logitr-cars` code 1.3)
-
---
+# .red[Warning]: Restrictions can lead to imbalances
 
 <br> 
 
-# .red[Warning]: Avoid restrictions if possible!
+Use `balance_by` in `cbc_design()` to fix imbalances
+
+<br>
+
+(see `logitr-cars` code 1.2)
 
 ---
 
@@ -445,7 +449,7 @@ countdown(
 
 ## Your Turn
 
-## Open `survey.Rproj` in "demo-choice-based-conjoint"
+## Open `survey.Rproj` in "conjoint_buttons" template
 
 With your team, discuss the specific choice question design for your project
 
@@ -453,7 +457,7 @@ With your team, discuss the specific choice question design for your project
 - Include a "none" option (outside good) or not?
 - Include restrictions?
 
-Edit the `make-choice-questions.R` file to design your choice questions.
+Then edit the `make-choice-questions.R` file to design your choice questions.
 
 ---
 
@@ -504,8 +508,8 @@ In your survey data, you will have a `respID` column
 ### 3. Filter the design for the respondentID
 
 ```{r}
-df <- design %>%
-  filter(respID == respondentID) %>%
+df <- design %>% #<<
+  filter(respID == respondentID) %>% #<<
   mutate(image = paste0("images/", image))
 ```
 
@@ -843,8 +847,10 @@ countdown(
 
 With your team, choose a format to work with (buttons or table) for your choice question, then modify the example survey to match your project.
 
+<br>
+
 ## Versions:
 
-## Buttons layout: [demo-choice-based-conjoint](https://github.com/surveydown-dev/demo-choice-based-conjoint/archive/refs/heads/main.zip)
+## Buttons layout: `conjoint_buttons`
 
-## Table layout: [demo-choice-based-conjoint-table](https://github.com/surveydown-dev/demo-choice-based-conjoint-table/archive/refs/heads/main.zip)
+## Table layout: `conjoint_tables`
