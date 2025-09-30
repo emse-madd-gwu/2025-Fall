@@ -36,7 +36,7 @@ profiles <- cbc_profiles(
     price       = c(15, 20, 25), # Price ($1,000)
     fuelEconomy = c(20, 25, 30), # Fuel economy (mpg)
     accelTime   = c(6, 7, 8),    # 0-60 mph acceleration time (s)
-    powertrain  = c("Gasoline", "Electric")
+    powertrain  = c("gas", "electric")
 )
 # Make a full-factorial design of experiment
 design <- cbc_design(
@@ -44,7 +44,8 @@ design <- cbc_design(
     n_resp   = 500, # Number of respondents
     n_alts   = 3,   # Number of alternatives per question
     n_q      = 8    # Number of questions per respondent
-)
+) %>% 
+  cbc_decode()
 # Make a labeled full-factorial design of experiment
 design_labeled <- cbc_design(
     profiles = profiles,
@@ -52,9 +53,10 @@ design_labeled <- cbc_design(
     n_alts   = 2,   # Number of alternatives per question
     n_q      = 8,   # Number of questions per respondent
     label    = "powertrain"
-)
+) %>% 
+  cbc_decode()
 # Make a survey with no choice option
-design_nochoice <- cbc_design(
+design_no_choice <- cbc_design(
     profiles = profiles,
     n_resp   = 500, # Number of respondents
     n_alts   = 3,   # Number of alternatives per question
@@ -75,7 +77,8 @@ design_short <- design %>%
     `Fuel Economy:` = fuelEconomy, 
     `Accel. Time:` = accelTime, 
     `Powertrain:` = powertrain
-  )
+  ) %>% 
+  as.data.frame()
 design_labeled_short <- design_labeled %>%
   mutate(
     price = scales::dollar(price),
@@ -88,8 +91,9 @@ design_labeled_short <- design_labeled %>%
     `Price:` = price, 
     `Fuel Economy:` = fuelEconomy, 
     `Accel. Time:` = accelTime
-  )
-design_nochoice_short <- design_nochoice %>%
+  ) %>% 
+  as.data.frame()
+design_no_choice_short <- design_no_choice %>%
   mutate(
     price = scales::dollar(price),
     fuelEconomy = paste0(fuelEconomy, " (mpg)"),
@@ -97,7 +101,7 @@ design_nochoice_short <- design_nochoice %>%
     price = ifelse(altID == 4, "", price),
     fuelEconomy = ifelse(altID == 4, "", fuelEconomy),
     accelTime = ifelse(altID == 4, "", accelTime),
-    powertrain = ifelse(powertrain_Electric == 1, "Electric", "Gasoline"),
+    powertrain = ifelse(powertrainelectric == 1, "Electric", "Gasoline"),
     powertrain = ifelse(altID == 4, "", powertrain),
     altID = ifelse(altID == 4, "None", altID)
   ) %>% 
@@ -108,8 +112,9 @@ design_nochoice_short <- design_nochoice %>%
     `Fuel Economy:` = fuelEconomy, 
     `Accel. Time:` = accelTime, 
     `Powertrain:` = powertrain
-  )
-row.names(design_nochoice_short) <- seq(nrow(design_nochoice_short))
+  ) %>% 
+  as.data.frame()
+row.names(design_no_choice_short) <- seq(nrow(design_no_choice_short))
 design_q1 <- design_short %>%
   filter(respID == 1, qID == 1) %>% 
   select(-respID, -qID)
@@ -122,13 +127,50 @@ design_labeled_q1 <- design_labeled_short %>%
 design_labeled_q2 <- design_labeled_short %>%
   filter(respID == 1, qID == 2) %>% 
   select(-respID, -qID)
-design_nochoice_q1 <- design_nochoice_short %>%
+design_no_choice_q1 <- design_no_choice_short %>%
   filter(respID == 1, qID == 1) %>% 
   select(-respID, -qID)
-design_nochoice_q2 <- design_nochoice_short %>%
+design_no_choice_q2 <- design_no_choice_short %>%
   filter(respID == 1, qID == 2) %>% 
   select(-respID, -qID)
 ```
+
+---
+
+class: inverse
+
+# Quiz 2
+
+```{r, echo=FALSE}
+countdown(
+  minutes      = 12,
+  warn_when    = 30,
+  update_every = 1,
+  top          = 0,
+  right        = 0,
+  font_size    = '3em'
+)
+```
+
+.leftcol[
+
+## Write your name on the quiz!
+
+## Rules:
+
+- Work alone; no outside help of any kind is allowed.
+- No calculators, no notes, no books, no computers, no phones.
+
+]
+
+.rightcol[
+
+<br>
+<center>
+<img src="https://github.com/emse-p4a-gwu/2022-Spring/raw/main/images/quiz_doge.png" width="400">
+</center>
+
+]
 
 ---
 
@@ -234,41 +276,6 @@ You can insert citations with `[@citekey]`, and a "References" table will be aut
 
 ---
 
-class: inverse
-
-# Quiz 2
-
-```{r, echo=FALSE}
-countdown(
-    minutes = 10,
-    warn_when = 30,
-    update_every = 1,
-    bottom = 0,
-    left = 0,
-    font_size = '4em'
-)
-```
-
-.leftcol[
-
-### Download the template from the #class channel
-
-### Make sure you unzip it!
-
-### When done, submit your `quiz2.qmd` on Blackboard
-
-]
-
-.rightcol[
-
-<center>
-<img src="https://github.com/emse-p4a-gwu/2022-Spring/raw/main/images/quiz_doge.png" width="400">
-</center>
-
-]
-
----
-
 ```{r child="topics/0.Rmd"}
 ```
 
@@ -279,13 +286,11 @@ countdown(
 
 ---
 
-## Download & unzip two repos:
+## Download & unzip:
 
-## - [logitr-cars](https://github.com/jhelvy/logitr-cars/archive/refs/heads/main.zip) 
+## - [logitr-cars](https://github.com/jhelvy/logitr-cars/archive/refs/heads/main.zip)
 
-## - [demo-choice-based-conjoint](https://github.com/surveydown-dev/demo-choice-based-conjoint/archive/refs/heads/main.zip)
-
-(code used in the [blog post](https://surveydown.org/blog/2024-08-28-choice-based-conjoint-surveys-with-surveydown/) on conjoint in surveydown)
+## - [today's practice notes](https://madd.seas.gwu.edu/2025-Fall/class/6-conjoint-questions.html)
 
 ---
 
@@ -298,7 +303,7 @@ class: middle, inverse, center
 ## .center[We'll be using the [{cbcTools} package](https://jhelvy.github.io/cbcTools/) today]
 
 ```{r, eval=FALSE}
-install.packages("cbcTools")
+pak::pak("jhelvy/cbcTools")
 ```
 
 ---
@@ -378,7 +383,7 @@ A "none" option means they can choose an "other" option
 ## Question 1
 
 ```{r, echo=FALSE}
-kable(t(design_nochoice_q1))
+kable(t(design_no_choice_q1))
 ```
 
 ]]
@@ -388,7 +393,7 @@ kable(t(design_nochoice_q1))
 ## Question 2
 
 ```{r, echo=FALSE}
-kable(t(design_nochoice_q2))
+kable(t(design_no_choice_q2))
 ```
 
 ]]

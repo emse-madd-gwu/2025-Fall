@@ -23,7 +23,7 @@ Your next major team assignment is your survey plan. The central questions of yo
 
 With that in mind, read through [this blog post](https://surveydown.org/blog/2024-08-28-choice-based-conjoint-surveys-with-surveydown/) I wrote on how to implement a choice-based conjoint survey in surveydown. It may not yet be immediately clear what every single piece of code is doing, but reading it at least once will help as we go forward with the class. You will probably want to use this blog post as a guide to implement your own conjoint surveys later in the class.
 
-Once you have an understanding of how things are working, try downloading the [template](https://surveydown.org/templates/conjoint_buttons) on how to implement a conjoint survey using the button format discussed in the blog. You should be able to use that template to re-create a working survey where the choice questions are shown randomly according to the design of experiment in the template.
+Once you have an understanding of how things are working, try downloading the [template](https://github.com/surveydown-dev/template_conjoint_buttons) on how to implement a conjoint survey using the button format discussed in the blog. You should be able to use that template to re-create a working survey where the choice questions are shown randomly according to the design of experiment in the template.
 
 # 3. Reflect
 

@@ -27,7 +27,7 @@ To get familiar with the platform, read the [Getting Started](https://surveydown
 
 For practice, try replicating one of the [template surveys](https://surveydown.org/templates) listed on the surveydown website. The [default](https://surveydown.org/templates/default) survey template will be the easiest to use, but try another template if you are interested. Follow these steps:
 
-1. Download or clone the [templates GitHub repository](https://github.com/surveydown-dev/templates).
+1. Download or clone a template of your choice.
 2. In the template you chose, open RStudio, then open the app.R file and click "Run". Then copy-paste the localhost url into your browser to locally preview the survey.
 3. Make edits to the survey to personalize it. Choose a topic that you find interesting and try modifying at least one question in the survey, then re-render the document to see your changes.
 
