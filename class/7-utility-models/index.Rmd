@@ -400,50 +400,6 @@ Coef. | Interpretation
 
 ---
 
-.leftcol[
-
-# `mnl_dummy`
-
-All dummy-code variables 
-
-```{r, eval=FALSE}
-pars = c(
-  "price_20", "price_25",
-  "fuelEconomy_25", "fuelEconomy_30",
-  "accelTime_7", "accelTime_8",
-  "powertrain_Electric")
-```
-
-Reference Levels:
-
-- Price: 15
-- Fuel Economy: 20
-- Accel. Time: 6
-- Powertrain: "Gasoline"
-
-]
-
---
-
-.rightcol[
-
-# `mnl_linear`
-
-All continuous (linear), except for `powertrain_Electric` 
-```{r, eval=FALSE}
-pars = c(
-  'price', 'fuelEconomy', 'accelTime', 
-  'powertrain_Electric')
-```
-
-Reference Levels:
-
-- Powertrain: "Gasoline"
-
-]
-
----
-
 class: inverse
 
 ```{r, echo=FALSE}
@@ -472,7 +428,7 @@ Attribute | Description
 
 ]
 
-2) Write code to estimate the following utility model<br>(HINT: you may need to make some dummy-coded variables!):
+2) Write code to estimate the following utility model:
 
 $$u_j = \beta_1 x_j^{\mathrm{price}} + \beta_2 x_j^{\mathrm{\%cacao}} + \beta_3 \delta_j^{\mathrm{crispy}} + \beta_4 \delta_j^{\mathrm{hershey}} + \beta_5 \delta_j^{\mathrm{lindt}} + \varepsilon_j$$
 
@@ -502,7 +458,7 @@ countdown(
 
 ---
 
-## .center[Estimating utility models with an _Outside Good_]
+## .center[Estimating utility models with a _No Choice_ option]
 
 <br>
 
@@ -510,7 +466,7 @@ countdown(
 
 ## 1. Open `logitr-cars.Rproj`
 
-## 2. Open `code/4.1-model-nochoice.R`
+## 2. Open `code/4.1-model-no_choice.R`
 
 ]
 
@@ -529,8 +485,7 @@ countdown(
 
 ```{r, eval=FALSE}
 data <- cbc_choices(
-    design = design,
-    obsID = "obsID"
+  design = design
 )
 ```
 
@@ -548,16 +503,19 @@ $v_j = -0.7 x_j^{\mathrm{price}} + 0.1 x_j^{\mathrm{fuelEconomy}} - 0.2 x_j^{\ma
 
 ]]
 
-```{r, eval=FALSE}
+```{r}
+#| eval: false
+
+priors <- cbc_priors(
+  profiles = profiles, 
+  price       = -0.7,
+  fuelEconomy = 0.1,
+  accelTime   = -0.2,
+  powertrainElectric = -4.0
+)
 data <- cbc_choices(
     design = design,
-    obsID = "obsID",
-    priors = list(
-        price       = -0.7,
-        fuelEconomy = 0.1,
-        accelTime   = -0.2,
-        powertrain_Electric = -4.0
-    )
+    priors = priors
 )
 ```
 
@@ -575,7 +533,7 @@ model <- logitr(
   outcome = "choice",
   obsID   = "obsID",
   pars    = c(
-      "price", "fuelEconomy", "accelTime", "powertrain_Electric"
+      "price", "fuelEconomy", "accelTime", "powertrainElectric"
   )
 )
 ```
@@ -603,6 +561,6 @@ countdown(
 
 2. Write out a utility model for your project.
 
-3. Write code to simulate data according to your utility model - pick some fake parameter values.
+3. Write code to simulate data according to your utility model - pick some parameter values (see `simulate-choices.R`).
 
 4. Write code to estimate a model using your simulated data.

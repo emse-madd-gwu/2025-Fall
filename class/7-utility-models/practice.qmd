@@ -22,7 +22,6 @@ library(patchwork)
 library(kableExtra)
 library(here)
 library(logitr)
-library(fastDummies)
 ```
 
 # HW Question 1

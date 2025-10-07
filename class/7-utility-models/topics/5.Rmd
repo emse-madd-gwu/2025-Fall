@@ -9,5 +9,5 @@ class: inverse, middle
 
 ### BREAK
 
-### 4. Outside good
+### 4. No choice
 ### 5. .orange[Team project utility models]
