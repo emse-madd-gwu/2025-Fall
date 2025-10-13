@@ -668,7 +668,7 @@ glimpse(wildlife_impacts2)
 
 class: center, middle
 
-## Download the [demo-choice-based-conjoint](https://github.com/surveydown-dev/demo-choice-based-conjoint/archive/refs/heads/main.zip) repo
+## Download the [conjoint_buttons](https://github.com/surveydown-dev/template_conjoint_buttons/archive/refs/heads/main.zip) template repo
 
 ---
 
@@ -680,7 +680,7 @@ class: center, middle
 
 ## 1. Open `survey.Rproj`
 
-## 2. Open `code/data_cleaning.R`
+## 2. Open `code/3_data_cleaning.R`
 
 ]
 
@@ -692,6 +692,6 @@ class: inverse
 
 .leftcol80[
 
-### For the rest of class, work with your team mates to start importing and cleaning your pilot survey data
+### For the rest of class, work with your team to finalize your pilot surveys and get them live!
 
 ]
