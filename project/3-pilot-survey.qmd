@@ -34,7 +34,7 @@ Download and unzip the [demo choice-based conjoint survey](https://github.com/su
 
 - `survey.Rproj`: An R Project file for staying organized.
 - `code/1_make_choice_questions.R`: The code to generate the `data/choice_questions.csv` file (your survey design file...use the code you wrote in class for this).
-- `choice_questions.csv`: The survey choice question design file.
+- `data/choice_questions.csv`: The survey choice question design file.
 - `survey.qmd`: The code for creating your survey content, which should include a welcome page, content form, and eligibility questions for screening our ineligible respondents. It should also include your education content and randomized conjoint choice questions, then any other questions you wish to ask your survey respondents (e.g. demographics).
 - `app.R`: The file to run the Shiny app.
 - `images`: A folder of images (if you're using any in your survey). 

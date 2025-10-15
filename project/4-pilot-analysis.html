@@ -411,8 +411,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>2. Pilot Data Analysis</h1>
 <p>Before writing your report, you should first analyze your pilot data by following these steps:</p>
 <ol type="1">
-<li>Download the survey response data from your Supabase account. You can import the data directly using the <code>sd_get_data()</code> function (see the <a href="https://surveydown.org/fetch-data">documentation page</a> for details). Save the raw data in the “data” folder in the report template.</li>
-<li>Open the <code>clean-data.R</code> file and write code to clean your pilot data and prepare it for modeling. Your cleaned choice data should be in a “long” format similar to the <a href="https://github.com/surveydown-dev/demo-choice-based-conjoint/blob/main/data/choiceData.csv">example choice data here</a>.</li>
+<li>Download the survey response data from your Supabase account. You can import the data directly using the <code>sd_get_data()</code> function (see the <a href="https://surveydown.org/docs/fetching-data">documentation page</a> for details). Save the raw data in the “data” folder in the report template.</li>
+<li>Open the <code>clean-data.R</code> file and write code to clean your pilot data and prepare it for modeling. Your cleaned choice data should be in a “long” format similar to the <a href="https://github.com/surveydown-dev/template_conjoint_buttons/blob/main/data/choice_data.csv">example choice data here</a>.</li>
 <li>Save your cleaned data file as a .csv file in the “data” folder.</li>
 <li>Open the <code>modeling.R</code> file and write code to estimate preliminary models using your cleaned choice data.</li>
 <li>Open the <code>power-analysis.R</code> file and write code to conduct a power analysis to inform the sample size requirements for your final survey.</li>

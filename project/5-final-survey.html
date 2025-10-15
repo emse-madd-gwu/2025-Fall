@@ -347,11 +347,11 @@ ul.task-list li input[type="checkbox"] {
 <p>As a team, create your <strong>final survey</strong> by building on your initial pilot survey. You should incorporate any changes you wrote about in your pilot analysis report. The course instructor will review and grade your survey and will provide written feedback. Follow the instructions below to prepare your pilot survey.</p>
 <section id="get-organized" class="level1">
 <h1>1. Get Organized</h1>
-<p>Download and unzip the <a href="https://github.com/surveydown-dev/demo-choice-based-conjoint/archive/refs/heads/main.zip">demo choice-based conjoint survey</a> for your pilot survey. The folder contains the following files:</p>
+<p>Download and unzip the <a href="https://github.com/surveydown-dev/template_conjoint_buttons/archive/refs/heads/main.zip">choice-based conjoint survey template</a> for your pilot survey. The folder contains the following files:</p>
 <ul>
 <li><code>survey.Rproj</code>: An R Project file for staying organized.</li>
-<li><code>make-choice-questions.R</code>: The code to generate the <code>choice_questions.csv</code> file (your survey design file…use the code you wrote in class for this).</li>
-<li><code>choice_questions.csv</code>: The survey choice question design file.</li>
+<li><code>code/1_make_choice_questions.R</code>: The code to generate the <code>data/choice_questions.csv</code> file (your survey design file…use the code you wrote in class for this).</li>
+<li><code>data/choice_questions.csv</code>: The survey choice question design file.</li>
 <li><code>survey.qmd</code>: The code for creating your survey content, which should include a welcome page, content form, and eligibility questions for screening our ineligible respondents. It should also include your education content and randomized conjoint choice questions, then any other questions you wish to ask your survey respondents (e.g.&nbsp;demographics).</li>
 <li><code>app.R</code>: The file to run the Shiny app.</li>
 <li><code>images</code>: A folder of images (if you’re using any in your survey).</li>
@@ -368,15 +368,15 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>You may directly copy and paste any content you wish from your <a href="https://madd.seas.gwu.edu/2025-Fall/project/2-survey-plan.html">Survey Plan</a> <a href="https://madd.seas.gwu.edu/2025-Fall/project/3-pilot-survey.html">Pilot Survey</a> assignments.</li>
 <li>In your <code>survey.qmd</code> file, you should have your randomized sets of choice questions working using your <code>choice_questions.csv</code> design file.</li>
-<li>Setup a <a href="https://surveydown.org/store-data">database connection</a> on Supabase and make sure your survey data is being stored properly in the database.</li>
+<li>Setup a <a href="https://surveydown.org/docs/storing-data">database connection</a> on Supabase and make sure your survey data is being stored properly in the database.</li>
 </ul>
-<blockquote class="blockquote">
-<p>Be sure to render your <code>survey.qmd</code> file often to an html file so you can preview that everything is displaying as expected, then also run the <code>app.R</code> file to preview your choice questions locally as a Shiny app.</p>
-</blockquote>
 </section>
 <section id="upload-your-survey-to-shinyapps.io" class="level1">
 <h1>4. Upload your survey to shinyapps.io</h1>
-<p>Only one person from your team should create an account for hosting your survey on shinyapps.io. Follow the documentation on <a href="https://surveydown.org/deployment">deploying the app</a>.</p>
+<p>Only one person from your team should create an account for hosting your survey on shinyapps.io. Follow the documentation on <a href="https://surveydown.org/docs/deployment">deploying the app</a>.</p>
+<blockquote class="blockquote">
+<p>Be sure to run the <code>app.R</code> file to preview your choice questions locally as a Shiny app before deploying to shinyapps.io.</p>
+</blockquote>
 </section>
 <section id="attribution" class="level1">
 <h1>5. Attribution</h1>
