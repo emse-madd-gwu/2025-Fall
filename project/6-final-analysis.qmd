@@ -58,8 +58,8 @@ All figures, tables, and equations should be referenced in the text.
 
 Before writing your report, you should first analyze your data by following these steps:
 
-1. Download the survey response data from your Supabase account. You can import the data directly using the `sd_get_data()` function (see the [documentation page](https://surveydown.org/fetch-data) for details). Save the raw data in the "data" folder in the report template.
-2. Open the `clean-data.R` file and write code to clean your pilot data and prepare it for modeling. Your cleaned choice data should be in a "long" format similar to the [example choice data here](https://github.com/surveydown-dev/demo-choice-based-conjoint/blob/main/data/choiceData.csv).
+1. Download the survey response data from your Supabase account. You can import the data directly using the `sd_get_data()` function (see the [documentation page](https://surveydown.org/docs/fetching-data) for details). Save the raw data in the "data" folder in the report template.
+2. Open the `clean-data.R` file and write code to clean your pilot data and prepare it for modeling. Your cleaned choice data should be in a "long" format similar to the [example choice data here](https://github.com/surveydown-dev/template_conjoint_buttons/blob/main/data/choice_data.csv).
 3. Save your cleaned data file as a .csv file in the "data" folder.
 4. Open the `modeling.R` file and write code to estimate any models you will use in your analysis. At a minimum, you should estimate:
 
