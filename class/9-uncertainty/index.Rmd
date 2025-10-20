@@ -38,9 +38,9 @@ lotr_words <- read_csv(here('data', 'lotr_words.csv'))
 
 ---
 
-# [Pilot Analysis Report](https://madd.seas.gwu.edu/2024-Fall/project/4-pilot-analysis.html)
+# [Pilot Analysis Report](https://madd.seas.gwu.edu/2025-Fall/project/4-pilot-analysis.html)
 
-### Due 11/03 (that's 10 days from now)
+### Due 11/02 (that's 9 days from now)
 
 ---
 
