@@ -47,15 +47,22 @@ design_rand <- cbc_design(
   n_q      = 6    # Number of questions per respondent
 )
 
-head(design)
+head(design_rand)
 
-cbc_balance(design_rand)
-cbc_overlap(design_rand)
+cbc_inspect(design_rand)
 ```
 
 Make a Bayesian D-efficient fractional factorial design:
 
 ```{r}
+priors = cbc_priors(
+    profiles,
+    price       = -0.1,
+    fuelEconomy = 0.1,
+    accelTime   = -0.1,
+    powertrain  = -4
+)
+
 design_db_eff <- cbc_design(
   profiles  = profiles,
   n_resp    = 500, # Number of respondents
@@ -63,23 +70,17 @@ design_db_eff <- cbc_design(
   n_q       = 6, # Number of questions per respondent
   n_start   = 5, 
   n_blocks  = 1,
-  priors = list(
-    price       = -0.1,
-    fuelEconomy = 0.1,
-    accelTime   = -0.1,
-    powertrain  = -4
-  ), 
-  method = "CEA"
+  priors = priors,
+  method = "modfed"
 )
 
 head(design_db_eff)
 
-cbc_balance(design_db_eff)
-cbc_overlap(design_db_eff)
+cbc_inspect(design_db_eff)
 ```
 
 Tuning Parameters:
 
 - `n_start`: Number of random starts when searching for D-efficient design.
 - `n_blocks`: Number of blocks used for D-efficient design. More blocks increases overall efficiency (more people see more different questions), but increases computation time to create design.
-- Change `method` to `"Modfed"`: Use the modified Federov algorithm instead of `"CEA"`.
+- Change `method` to `"modfed"`: Use the modified Federov algorithm instead of `"cea"`.

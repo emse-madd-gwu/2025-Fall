@@ -47,16 +47,23 @@ design_rand <- cbc_design(
 
 head(design_rand)
 
-cbc_balance(design_rand)
-cbc_overlap(design_rand)
+cbc_inspect(design_rand)
 ```
 
 Simulate random choices
 
 ```{r}
-data_rand <- cbc_choices(
+priors <- cbc_priors(
+  profiles,
+  price       = -0.1,
+  fuelEconomy = 0.1,
+  accelTime   = -0.1,
+  powertrain  = -4
+)
+
+choices_rand <- cbc_choices(
     design = design_rand,
-    obsID = "obsID"
+    priors = priors
 )
 ```
 
@@ -64,32 +71,29 @@ Run power analysis
 
 ```{r}
 power_rand <- cbc_power(
-    nbreaks = 10,
-    n_q     = 6,
-    data    = data_rand,
-    pars    = c("price", "fuelEconomy", "accelTime", "powertrain"),
+    data = choices_rand,
     outcome = "choice",
-    obsID   = "obsID"
+    obsID = "obsID",
+    n_q = 6,
+    n_breaks = 10,
+    pars    = c("price", "fuelEconomy", "accelTime", "powertrain")
 )
 
-head(power_rand)
-tail(power_rand)
+power_rand
 ```
 
 Here is a summary of the standard errors for each sample size:
 
 ```{r}
-ggplot(power_rand) +
-  geom_hline(yintercept = 0.05, color = "red", linetype = 2) +
-  geom_point(aes(x = sampleSize, y = se, color = coef)) +
-  expand_limits(y = 0) +
-  scale_y_continuous(limits = c(0, 0.125)) +
-  theme_bw() + 
-  labs(
-    x = "Sample size", 
-    y = "Standard error", 
-    color = "Coefficient"
-  )
+plot(
+  power_rand,
+  type = "power"
+)
+
+plot(
+  power_rand,
+  type = "se"
+)
 ```
 
 
@@ -99,7 +103,8 @@ ggplot(power_rand) +
 Make a Bayesian D-efficient fractional factorial design:
 
 ```{r}
-priors <- list(
+priors <- cbc_priors(
+  profiles,
   price       = -0.1,
   fuelEconomy = 0.1,
   accelTime   = -0.1,
@@ -113,56 +118,63 @@ design_db_eff <- cbc_design(
   n_q       = 6,   # Number of questions per respondent
   n_start   = 10, 
   n_blocks  = 1,
-  priors = priors
+  priors = priors, 
+  method = 'modfed'
 )
 
-head(design_db_eff)
+cbc_inspect(design_db_eff)
 ```
 
 Simulate choices
 
 ```{r}
-data_db_eff <- cbc_choices(
+choices_db_eff <- cbc_choices(
     design = design_db_eff,
-    obsID  = "obsID",
     priors = priors
 )
-
-head(data_db_eff)
-
-cbc_balance(design_db_eff)
-cbc_overlap(design_db_eff)
 ```
 
 Run power analysis
 
 ```{r}
 power_db_eff <- cbc_power(
-    nbreaks = 10,
-    n_q     = 6,
-    data    = data_db_eff,
-    pars    = c("price", "fuelEconomy", "accelTime", "powertrain"),
+    data = choices_db_eff,
     outcome = "choice",
-    obsID   = "obsID"
+    obsID = "obsID",
+    n_q = 6,
+    n_breaks = 10,
+    pars    = c("price", "fuelEconomy", "accelTime", "powertrain")
 )
 
-head(power_db_eff)
-tail(power_db_eff)
+power_db_eff
 ```
 
 Here is a summary of the standard errors for each sample size:
 
 ```{r}
-ggplot(power_db_eff) +
-  geom_hline(yintercept = 0.05, color = "red", linetype = 2) +
-  geom_point(aes(x = sampleSize, y = se, color = coef)) +
-  expand_limits(y = 0) +
-  scale_y_continuous(limits = c(0, 0.125)) +
-  theme_bw() + 
-  labs(
-    x = "Sample size", 
-    y = "Standard error", 
-    color = "Coefficient"
-  )
+plot(
+  power_db_eff,
+  type = "power"
+)
+
+plot(
+  power_db_eff,
+  type = "se"
+)
 ```
 
+# Compare designs
+
+```{r}
+plot_compare_power(
+  Random = power_rand,
+  Modfed = power_db_eff,
+  type = "power"
+)
+
+plot_compare_power(
+  Random = power_rand,
+  Modfed = power_db_eff,
+  type = "se"
+)
+```
