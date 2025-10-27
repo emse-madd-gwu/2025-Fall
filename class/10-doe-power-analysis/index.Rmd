@@ -31,23 +31,29 @@ class: inverse
 
 ```{r, echo=FALSE}
 countdown(
-    minutes = 10,
-    warn_when = 30,
-    update_every = 1,
-    bottom = 0,
-    left = 0,
-    font_size = '4em'
+  minutes      = 12,
+  warn_when    = 30,
+  update_every = 1,
+  top          = 0,
+  right        = 0,
+  font_size    = '3em'
 )
 ```
 
 .leftcol[
 
-### Link is in the #class channel
+## Write your name on the quiz!
+
+## Rules:
+
+- Work alone; no outside help of any kind is allowed.
+- No calculators, no notes, no books, no computers, no phones.
 
 ]
 
 .rightcol[
 
+<br>
 <center>
 <img src="https://github.com/emse-p4a-gwu/2022-Spring/raw/main/images/quiz_doge.png" width="400">
 </center>
@@ -261,8 +267,18 @@ profiles <- cbc_profiles(
     warranty = c(1, 0),
     ford     = c(1, 0)
 )
+```
+
+```{r}
+#| eval: false
 
 profiles
+```
+
+```{r}
+#| echo: false
+
+data.frame(profiles)
 ```
 
 ]
@@ -293,8 +309,18 @@ profiles <- cbc_profiles(
     warranty = c(1, 0),
     ford     = c(1, 0)
 )
+```
+
+```{r}
+#| eval: false
 
 profiles
+```
+
+```{r}
+#| echo: false
+
+data.frame(profiles)
 ```
 
 ]
@@ -318,7 +344,15 @@ All pairs of levels appear together an equal number of times.
 .rightcol[
 
 ```{r}
+#| eval: false
+
 profiles[c(1, 3, 5, 6),]
+```
+
+```{r}
+#| echo: false
+
+data.frame(profiles[c(1, 3, 5, 6),])
 ```
 
 ]
@@ -617,7 +651,7 @@ class: center, middle
 
 ## Using {cbcTools}, we can run simulations to determine the necessary sample size for a specific model
 
-# Open `powerAnalysis.qmd`
+# Open `power-analysis.qmd`
 
 ---
 

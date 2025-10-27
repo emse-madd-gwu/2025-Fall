@@ -63,7 +63,7 @@ files10 <- c(
   'balance-orthogonality.qmd',
   'design-efficiency.qmd',
   'interactions.qmd',
-  'powerAnalysis.qmd',
+  'power-analysis.qmd',
   'practice-solutions.qmd',
   'practice.qmd'
 )
@@ -89,5 +89,5 @@ files13 <- c(
 # Create zip files of class notes
 zip::zip(
   zipfile = paste0(lesson, ".zip"),
-  files = files9
+  files = files10
 )
