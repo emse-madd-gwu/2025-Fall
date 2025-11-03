@@ -89,5 +89,5 @@ files13 <- c(
 # Create zip files of class notes
 zip::zip(
   zipfile = paste0(lesson, ".zip"),
-  files = files10
+  files = files11
 )
