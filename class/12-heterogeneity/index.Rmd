@@ -31,27 +31,29 @@ class: inverse
 
 ```{r, echo=FALSE}
 countdown(
-    minutes = 10,
-    warn_when = 30,
-    update_every = 1,
-    bottom = 0,
-    left = 0,
-    font_size = '4em'
+  minutes      = 12,
+  warn_when    = 30,
+  update_every = 1,
+  top          = 0,
+  right        = 0,
+  font_size    = '3em'
 )
 ```
 
 .leftcol[
 
-### Download the template from the #class channel
+## Write your name on the quiz!
 
-### Make sure you unzip it!
+## Rules:
 
-### When done, submit your `quiz5.qmd` on Blackboard
+- Work alone; no outside help of any kind is allowed.
+- No calculators, no notes, no books, no computers, no phones.
 
 ]
 
 .rightcol[
 
+<br>
 <center>
 <img src="https://github.com/emse-p4a-gwu/2022-Spring/raw/main/images/quiz_doge.png" width="400">
 </center>
@@ -62,10 +64,15 @@ countdown(
 
 # Houskeeping items 
 
-- **Final presentations** will be on 12/11 during normal class hours. You can pre-record a video presentation if you want, or you can do it live.
+- **Final presentations** will be on 12/10 during normal class hours. You can pre-record a video presentation if you want, or you can do it live.
 
 --
-- [**Final Analysis**](https://madd.seas.gwu.edu/2024-Fall/project/6-final-analysis.html) (due 12/08) will also be an html page report. 
+
+- [**Final Surveys**](https://madd.seas.gwu.edu/2025-Fall/project/5-final-survey.html) are due 11/16 (this Sunday!). **They need to be fully working**
+
+--
+
+- [**Final Analysis**](https://madd.seas.gwu.edu/2025-Fall/project/6-final-analysis.html) (due 12/07) will also be an html page report.
 
 --
 
