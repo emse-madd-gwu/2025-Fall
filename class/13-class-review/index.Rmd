@@ -64,7 +64,7 @@ class: middle
 
 # Final Presentation 
 
-## - In class, 12/11 (6:10 - 8:40)
+## - In class, 12/10 (3:30 - 5:30)
 
 --
 
@@ -72,7 +72,7 @@ class: middle
 
 --
 
-## - Slides due on Blackboard by midnight on 12/10
+## - Slides due on Blackboard by midnight on 12/09
 
 ---
 
@@ -1073,33 +1073,3 @@ $$R = Q*P$$
 
 ## 2. Open `code/9.1-compute-sensitivity.R`
 ## 3. Open `code/9.2-plot-sensitivity.R`
-
-
----
-
-class: inverse
-
-```{r, echo=FALSE}
-countdown(
-  minutes = 15,
-  warn_when = 15,
-  update_every = 1,
-  top = 0,
-  right = 0,
-  font_size = '2em'
-)
-```
-
-## Your Turn
-
-### As a team: 
-
-.leftcol80[.font120[
-
-- Read in and clean your final data. 
-- Estimate a baseline model. 
-- Set your baseline market simulation case. 
-- Compute sensitivities to price and other attributes. 
-
-]]
- 
