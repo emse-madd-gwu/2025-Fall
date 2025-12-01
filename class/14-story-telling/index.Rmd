@@ -35,25 +35,19 @@ output:
 
 ---
 
-class: middle, inverse, center
-
-# Exam Solutions
-
----
-
 # Final Presentation 
 
-## - In class, 12/11 (6:10pm - 8:40pm)
+## - In class, 12/10 (3:30pm - 5:30pm)
 
 ## - 10 minutes (strict)
 
-## - Slides due in Blackboard by midnight on 12/10 (one team member submit)
+## - Slides due in Blackboard by midnight on 12/09 (one team member submit)
 
 ---
 
 class: middle, center
 
-# Download [this cheetsheet](https://github.com/emse-madd-gwu/2024-Fall/raw/main/content/cheatsheet-storytelling.pdf) for today's content
+# Download [this cheetsheet](https://github.com/emse-madd-gwu/2025-Fall/raw/main/content/cheatsheet-storytelling.pdf) for today's content
 
 ---
 
@@ -690,7 +684,7 @@ Afterwards, we will go around the room and one person from each team will practi
 
 ---
 
-# .center[[Final Analysis Reports](https://madd.seas.gwu.edu/2024-Fall/project/6-final-analysis.html) due 12/10<br>(you have 4 days left!)]
+# .center[[Final Analysis Reports](https://madd.seas.gwu.edu/2025-Fall/project/6-final-analysis.html) due 12/07<br>(you have 4 days left!)]
 
 --
 
@@ -714,7 +708,7 @@ spelling::spell_check_files("report.qmd")
 
 ---
 
-# .center[[Final Presentations](https://madd.seas.gwu.edu/2024-Fall/project/7-final-presentation.html) due 12/10]
+# .center[[Final Presentations](https://madd.seas.gwu.edu/2025-Fall/project/7-final-presentation.html) due 12/09]
 
 </br>
 
