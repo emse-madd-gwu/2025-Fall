@@ -60,7 +60,9 @@ Your slides do not need to include the detailed code used to conduct your analys
     - At least one slide depicting an example choice question
     - At least one slide with some summary stats about your sample (e.g., sample size, etc.)
 3. Your main findings:
+    - A slide describing your utility model
     - Polished charts of WTP, market simulations, sensitivity analyses.
+    - For your market simulation(s), you must show a table showing the attributes used in the simulation(s).
     - Your recommendations based on your findings.
 
 # 4. Publish 
