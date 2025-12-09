@@ -27,49 +27,57 @@ output:
 
 class: center, middle
 
-# OptiSync: AI-Powered Smartphone Optimization
+# RFIDinMe: Investigating the use of<br>alternate RFID devices
 
-## by Chaitanya Aggarwal, Deepansh Sharma, Chinmay Wayal, and Vishnu Gujula
-
----
-
-class: center, middle
-
-# Health Tracker Device
-
-## by Abdul Jaleel Marga, Ben Yimaj, Jade Haneef, and Katherine Sequera Dominguez
+## by Abdullah, Bogdan, Collin, Jeb
 
 ---
 
 class: center, middle
 
-# Helix analytics
+# Portable Modular Power Bank
 
-## by Mehul Bhatt, Nisha Chauhan, and Aman Vazirani
-
----
-
-class: center, middle
-
-# Mobile AI Functionality
-
-## by Taekwon Choi, Stephen Hilton, Bryce Huffman, Vidyullatha KS, and Faizan Mufti
+## by Kidist Bekele, Donia Drias, Kaitlyn Frost, Hana Kilani
 
 ---
 
 class: center, middle
 
-# Scootistic DC
+# Reusable To-Go with OZZI: A conjoint analysis of OZZI reusable containers in university dining
 
-## by Lola Nurullaeva, Sachi Nandurkar, Shubham Patil, Dhanyasri Bolla, and Harshal Dinesh Soni
+## by Sai Lekhana Kottiyada, Sri Murari Dachepalli, Jyothika Priyanka Talluri, Ulindala Venkata Nikhil Kumar Reddy
 
 ---
 
 class: center, middle
 
-# Team Water Bottle: A Report on Water Bottle Design Attributes and Their Market Implications
+# Lab-Grown Chicken Consumer Preferences:<br>Exploring Environmental<br>and Animal-Welfare Trade-Offs
 
-## by Ben Buechner, Max Feng, Daniel Fisher, and Parker Reese
+## by Luis Bracho, Massimo Mariani, Shannon Zhang, Sami Gebeyehu
+
+---
+
+class: center, middle
+
+# Cycle Sense: Menstrual Health Tracking
+
+## by Marena Marzari, Federica Negron, Diego Farah,<br>Tomas Hache, Sabina Pereira
+
+---
+
+class: center, middle
+
+# FlexiConnect: A Conjoint Analysis of Consumer Preferences for Flexible Service Plans
+
+## by Harish Kommana, Lakshana Ananthakrishnan Prabhakar, Girish Kumar Naragani,<br>and Samuel Asiedu Boateng
+
+---
+
+class: center, middle
+
+# Consumer Adoption of Autonomous Robots<br>for Last-Mile Deliveries
+
+## by Adwoa Darko, Siddharth Kusuma, Sudeep Januga
 
 ---
 
