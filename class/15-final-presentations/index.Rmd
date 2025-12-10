@@ -27,6 +27,14 @@ output:
 
 class: center, middle
 
+# Lab-Grown Chicken Consumer Preferences:<br>Exploring Environmental<br>and Animal-Welfare Trade-Offs
+
+## by Luis Bracho, Massimo Mariani, Shannon Zhang, Sami Gebeyehu
+
+---
+
+class: center, middle
+
 # RFIDinMe: Investigating the use of<br>alternate RFID devices
 
 ## by Abdullah, Bogdan, Collin, Jeb
@@ -46,14 +54,6 @@ class: center, middle
 # Reusable To-Go with OZZI: A conjoint analysis of OZZI reusable containers in university dining
 
 ## by Sai Lekhana Kottiyada, Sri Murari Dachepalli, Jyothika Priyanka Talluri, Ulindala Venkata Nikhil Kumar Reddy
-
----
-
-class: center, middle
-
-# Lab-Grown Chicken Consumer Preferences:<br>Exploring Environmental<br>and Animal-Welfare Trade-Offs
-
-## by Luis Bracho, Massimo Mariani, Shannon Zhang, Sami Gebeyehu
 
 ---
 
