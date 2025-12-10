@@ -59,7 +59,7 @@ class: center, middle
 
 class: center, middle
 
-# Cycle Sense: Menstrual Health Tracking
+# [Cycle Sense: Menstrual Health Tracking](https://www.canva.com/design/DAG6-CfXxck/pwuD-Rmo2q-hYFsu11kWtg/view?utm_content=DAG6-CfXxck&utm_campaign=designshare&utm_medium=link&utm_source=viewer)
 
 ## by Marena Marzari, Federica Negron, Diego Farah,<br>Tomas Hache, Sabina Pereira
 
